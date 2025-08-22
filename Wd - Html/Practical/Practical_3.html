@@ -1,0 +1,69 @@
+<!-- Task: Create a product catalog table that includes the following columns:
+o Product Name
+o Product Image (use placeholder image URLs)
+o Price
+o Description
+o Availability (in stock, out of stock) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product catalog</title>
+    <style>
+        table , th , td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+            text-align: center;
+        }
+        table{
+              width: 100%;
+        }
+        tr{
+            width: 100%;;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 style="color: red;"><center><u>Ambika Dughdhyalay And Sweet</u></center></h1>
+    <table>
+        <thead>
+         <tr>
+            <th>Product Name</th>
+            <th>Product Image</th>
+            <th>price</th>
+            <th>Description</th>
+            <th>Availability</th>
+         </tr>
+        </thead>
+        <tr>
+            <td>Basundi</td>
+            <td><img src="./kesar_basundi.jpg" alt="kesar_basundi" style="width: 200px; height: 90px;" ></td>
+            <td>400.00</td>
+            <td>Basundi is a rich, creamy Indian dessert made by simmering milk with sugar, cardamom, and saffron.</td>
+            <td rowspan="2">In stock</td>
+        </tr>
+        <tr>
+            <td>Shrikhand</td>
+            <td><img src="./Mango_Shrikhand.jpg" alt="Mango_Shrikhand" style="width: 200px; height: 90px;"></td>
+            <td>600.00</td>
+            <td>Shrikhand is a creamy, sweet Indian dessert made from strained yogurt, flavored with saffron, cardamom, and garnished with nuts.</td>
+        </tr>
+        <tr>
+            <td>Rasgulla</td>
+            <td><img src="./Rasgulla_Sweet.jpg" alt="Rasgulla_Sweet" style="width: 200px; height: 90px;"></td>
+            <td>700.00</td>
+            <td>Rasgulla is a soft, spongy Indian sweet made from fresh cheese balls cooked in light sugar syrup.</td>
+            <td rowspan="2">Out of stock</td>
+        </tr>
+        <tr>
+            <td>Laddu</td>
+            <td><img src="./Laduu_sweet.jpg" alt="Laddu_Sweet" style="width: 200px; height: 100px;"></td>
+            <td>650.00</td>
+            <td>Treat yourself to the deliciousness of our premium Nice Laddu! Made with the finest ingredients and crafted with care, these soft and juicy delights ...</td>
+        </tr>
+    </table>
+</body>
+</html>

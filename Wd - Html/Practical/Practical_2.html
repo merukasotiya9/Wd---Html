@@ -1,0 +1,86 @@
+<!-- Task: Create a contact form with the following fields:
+o Full name (text input)
+o Email (email input)
+o Phone number (tel input)
+o Subject (dropdown menu)
+o Message (textarea)
+o Submit button -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table 
+    {
+        border: 1px solid black;
+    }
+  </style>
+  <body>
+    <form action="">
+      <table>
+        <tr>
+          <td><label for="name">Full Name:</label></td>
+          <td><input type="text" name="name" id="fn" required /></td>
+          <br />
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              pattern="[a-z0-9]+{2,4}@+gmail.com"
+            />
+          </td>
+          <br />
+        </tr>
+        <tr>
+          <td><label for="phno">Phone-Number:</label></td>
+          <td>
+            <input
+              type="tel"
+              name="phno"
+              id="phno"
+              minlength="10"
+              maxlength="10"
+            required/>
+          </td>
+          <br />
+        </tr>
+        <tr>
+          <td><label for="sub">Subject</label></td>
+          <td>
+            <select name="sub" id="sub">
+              <option value="Python">Python</option>
+              <option value="Java">Java</option>
+              <option value="js">JavaScript</option>
+              <option value="C++">C++</option>
+              <option value="Kotlin">Kotlin</option>
+            </select>
+          </td>
+          <br />
+        </tr>
+        <tr>
+          <td><label for="Message">Message</label></td>
+          <td>
+            <textarea
+              name="Message"
+              id="Message"
+              placeholder="Give to Message"
+            ></textarea>
+          </td>
+          <br />
+        </tr>
+        <tr>
+          <td >
+            <input type="submit" onclick="alert('hello meru')" value="submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
